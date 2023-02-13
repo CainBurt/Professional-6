@@ -65,7 +65,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background-color: #e6dace;
+  background-color: #fff;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
@@ -114,7 +114,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .contact-form {
-  background: #e6dace;
+  background: #fff;
   width: 100%;
   border-radius: 2rem;
   .col-xl-6 {
@@ -175,7 +175,7 @@
   text-indent: 0;
 }
 input {
-  accent-color: #FF8256;
+  accent-color: #000;
   text-indent: 0;
 }
 .contact-form input[type="text"],

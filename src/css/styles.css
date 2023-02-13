@@ -309,8 +309,8 @@ p {
   --orange1: #000;
   --blue: #000;
   --green: #7CDB41;
-  --pink: #FF8256;
-  --pink2: #FF8256;
+  --pink: #fff;
+  --pink2: #fff;
 }
 
 .text-blue {
@@ -5304,7 +5304,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #e6dace;
+  background-color: #fff;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
@@ -5350,7 +5350,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
                   Contact Form              
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .contact-form {
-  background: #e6dace;
+  background: #fff;
   width: 100%;
   border-radius: 2rem;
 }
@@ -5419,7 +5419,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 input {
-  accent-color: #FF8256;
+  accent-color: #000;
   text-indent: 0;
 }
 
@@ -5774,6 +5774,7 @@ header {
   height: 10.5rem;
   color: #FFFFFF;
   background-color: #000000;
+  border-bottom: 1px solid white;
 }
 header .menu-links {
   display: flex;
