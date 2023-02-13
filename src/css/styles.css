@@ -6007,6 +6007,7 @@ footer {
   position: relative;
   z-index: 2;
   color: #fff;
+  background-color: black;
 }
 footer .text-center > a {
   font-weight: 600;
@@ -7190,7 +7191,7 @@ button.swiper-pagination-bullet {
 }
 .terms-page a {
   font-family: neue-haas-grotesk-display, sans-serif;
-  color: var(--orange);
+  color: #fff;
 }
 .terms-page li {
   margin-left: 1.5rem;
