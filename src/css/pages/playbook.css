@@ -1,0 +1,105 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Playbook                 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.playbook-title {
+  max-width: 56rem;
+  height: auto;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 1024px) {
+  .playbook-title {
+    max-width: 75vw;
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .playbook-title {
+    max-width: 60vw;
+  }
+}
+
+.pb-container {
+  position: relative;
+  min-height: 85vh;
+}
+.pb-container .register-button {
+  margin-top: 1.5rem;
+}
+@media (max-width: 1024px) {
+  .pb-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.pb-container .btn-1 {
+  padding: 1.5rem 6rem;
+}
+
+.pb-content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .pb-content {
+    width: 45% !important;
+  }
+}
+@media (max-width: 576px) {
+  .pb-content {
+    padding-right: 3.5vw;
+    padding-left: 3.5vw;
+  }
+}
+@media (max-width: 1024px) {
+  .pb-content {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
+.pb-content h1 {
+  max-width: 156rem;
+  font-family: "a-gothic";
+  text-transform: uppercase;
+  font-size: 6.8rem;
+  line-height: 0.95;
+}
+.pb-content h5 {
+  font-family: "a-gothic";
+  font-size: 2rem;
+  padding: 2.5rem 0;
+  text-transform: uppercase;
+}
+.pb-content p {
+  margin: 0 auto;
+  font-size: 2rem;
+  max-width: 55rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 1024px) {
+  .pb-content {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+  .pb-content h1 {
+    font-size: 5.8rem;
+  }
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.has-bg {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 55vh;
+}
+@media (min-width: 1025px) {
+  .has-bg {
+    min-height: 85vh;
+    width: 100vw !important;
+  }
+}/*# sourceMappingURL=playbook.css.map */

@@ -1,0 +1,88 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      dpkCursor Css 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.dpkCursor {
+  @include flex-center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999999;
+  height: 4rem;
+  width: 4rem;
+  color: white;
+  border: 2px solid #fff;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.2s cubic-bezier(0.51, 1.07, 1, 1),
+    height 0.2s cubic-bezier(0.51, 1.07, 1, 1),
+    background-color 0.2s cubic-bezier(0.51, 1.07, 1, 1);
+    
+
+  &.hover-active {
+    height: 7rem;
+    width: 7rem;
+    font-size: 0.875rem;
+  }
+
+  &.hover-bg{
+    border-width: 0;
+    mix-blend-mode: normal;
+  }
+
+  &.noCursor {
+   border-width:0;
+  }
+
+  &.emogy {
+    height: 6rem;
+    width: 6rem;
+    font-size: 2rem;
+    mix-blend-mode: normal;
+  }
+
+  &.mixBlend {
+    height: 4rem;
+    width: 4rem;
+    background: white;
+    mix-blend-mode: difference;
+  }
+
+  &.hover-img{
+    height: 10rem;
+    width: 10rem;
+    border: none;
+    border-radius: 0;
+    background-size: cover;
+    mix-blend-mode: normal;
+  }
+
+  &.star{
+    height: 10rem;
+    width: 10rem;
+    font-size: 5rem;
+  }
+
+}
+
+
+
+img.dpk-hover-img {
+  visibility: hidden;
+  display: none;
+}
+
+
+
+
+
+

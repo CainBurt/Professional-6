@@ -1,0 +1,64 @@
+{# {% set logo = TimberImage(options.logo_main_nike) %} #}
+
+<header>
+
+	{# Event counter value #}
+	<script>
+		var counterValue = '{{ post.counter_value ? post.counter_value : post.parent.counter_value }}';
+	</script> 
+
+
+	{% if cancel_page %}
+		<a class="site-link" href="{{ site.url }}">
+			<img src="{{ theme.link ~ '/src/img/nike-white.svg' }}" alt="{{ main_logo.alt }}">
+		</a>
+	{% else %}
+		<a class="site-link" href="{{ site.url }}">
+			{% if post.logo_selection == 'bymarina' %}
+				<img src="{{ white_logo_dubai }}" alt="{{ white_logo_dubai.alt }}">
+			{% elseif post.logo_selection == 'bydubaihills' %}
+				<img src="{{ white_logo_dubaihills }}" alt="{{ white_logo_dubai.alt }}">	
+			{% else %}
+				<img src="{{ main_logo }}" alt="{{ main_logo.alt }}">
+			{% endif %}
+		</a>
+	{% endif %}
+
+	
+
+	{% if post.counter_value or post.parent.counter_value %}
+		<div class="timer-block timer-marina"> 
+			{% if post.counter_caption or post.parent.counter_caption %}
+				<p>{{ post.counter_caption ? post.counter_caption : post.parent.counter_caption }}</p>
+			{% endif %}
+			<span class="timer">00:00:00:00</span>
+		</div>
+	{% endif %}
+
+</header>
+
+<style>
+	.timer-block{
+		display: flex;
+    	align-items: center;
+	}
+	.timer-block p{
+		margin-right: 15px;
+		font-size: 3.4rem;
+		color: #fff;
+	}
+	@media only screen and (max-width: 767px) {
+		.timer-block{
+			flex-direction: column;
+		}
+		.timer-block p{
+			font-size: 25px;
+    		margin: 0;
+		}
+	}
+	@media only screen and (max-width: 560px) {
+		.timer-block p{
+			font-size: 15px;
+		}
+	}
+</style>

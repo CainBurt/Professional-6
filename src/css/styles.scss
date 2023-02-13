@@ -1,0 +1,72 @@
+@import "./components/media.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   General                     
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@import "./components/general.scss";
+
+@import "./components/helper.scss";
+
+@import "./components/color.scss";
+
+@import "./components/fonts.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Bootstrap                     
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@import "./components/bootstrap-reset.scss";
+
+@import "./components/bootstrap.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 Locomotive  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@import "./locomotive/locomotive.scss";
+
+@import "./locomotive/locoEffects.scss";
+
+@import "./components/btn.scss";
+
+@import "./components/fancybox.scss";
+
+@import "./components/forms.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Header &   Menu        
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@import "./components/header.scss";
+
+@import "./components/header-mob.scss";
+
+@import "./pages/footer.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Swiper          
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@import "./components/swiper.scss";
+
+@import "./components/slider.scss";
+
+@import "./components/vimeo.scss";
+
+@import "./components/hero.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 PAGES             
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@import "./pages/homepage.scss";
+
+@import "./pages/inner-pages.scss";
+
+@import "./components/cancel.scss";
+
+@import "./components/terms.scss";
+
+@import "./pages/playbook.scss";
+

@@ -1,0 +1,74 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             Terms Page              
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.cancel-page .cancel-page-container {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+  min-height: 85vh;
+}
+.cancel-page h2 {
+  font-size: 3.8rem;
+  color: var(--blue);
+  font-family: palatino;
+  font-weight: 600;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.cancel-page h4 {
+  padding-bottom: 1.5rem;
+  margin-top: 4rem;
+  font-size: 2.8rem;
+  color: var(--blue);
+  font-family: palatino;
+}
+.cancel-page p strong {
+  padding-bottom: 1.5rem;
+  margin-top: 4rem;
+  font-size: 2.8rem;
+  display: block;
+  color: var(--blue);
+  font-family: palatino;
+}
+.cancel-page p {
+  color: var(--blue);
+  font-size: 2rem;
+  font-family: palatino;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 2rem;
+}
+.cancel-page .contact-form {
+  width: 85%;
+}
+.cancel-page .contact-form .row {
+  padding-top: 1vw;
+}
+.cancel-page .wpcf7-response-output {
+  width: 61%;
+}
+.cancel-page .register-button {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  .cancel-page .register-button {
+    text-align: center;
+    white-space: nowrap;
+    padding: 1rem 2rem;
+  }
+}
+.cancel-page .error_message,
+.cancel-page .success_message {
+  padding-bottom: 1.5rem;
+  font-size: 2.8rem;
+  color: var(--blue);
+  font-family: palatino;
+  text-align: center;
+}
+.cancel-page .error_message {
+  color: red;
+}
+.cancel-page .success_message {
+  color: green;
+}/*# sourceMappingURL=cancel.css.map */

@@ -1,0 +1,20 @@
+<footer class="container">
+       <div class="row text-center justify-content-center">
+            {% set copyright = options.copyright %}
+            {% set crowd = options.crowd %}
+            {% set term = options.terms_cond %}
+            <div class="col-md-4 col-xl-3">
+                <span> {{ copyright }} </span>
+            </div>
+            <div class="col-md-4 col-xl-3 text-center">
+                <a href="{{ term }}" class="linehover"> Terms & Conditions </a>
+            </div>
+            <div class="col-md-4 col-xl-3">
+                {% if crowd %}
+                    <a href="https://thisiscrowd.com/" target="_blank">{{ crowd }}
+                        <img src="{{ theme.link ~ '/src/img/crowd.svg' }}" style="max-width: 3.5rem; height:auto" alt="this is crowd">
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+</footer>

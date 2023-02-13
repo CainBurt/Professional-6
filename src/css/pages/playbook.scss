@@ -1,0 +1,100 @@
+@import "../components/media.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Playbook                 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.playbook-title {
+  max-width: 56rem;
+  height: auto;
+  margin-bottom: 2.5rem;
+
+  @include media("<=tablet") {
+    max-width: 75vw;
+    margin-top: 4rem;
+  }
+  @include media(">phone", "<=tablet") {
+    max-width: 60vw;
+  }
+}
+
+.pb-container {
+  position: relative;
+  // padding-top: 10.5rem;
+  min-height: 85vh;
+  .register-button {
+    margin-top: 1.5rem;
+  }
+  @include media("<=tablet") {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn-1 {
+    padding: 1.5rem 6rem;
+  }
+}
+
+.pb-content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  @include media(">tablet") {
+    width: 45% !important;
+  }
+
+  @media (max-width: 576px) {
+    padding-right: 3.5vw;
+    padding-left: 3.5vw;
+  }
+
+  @media (max-width: 1024px) {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  h1 {
+    max-width: 156rem;
+    font-family: "a-gothic";
+    text-transform: uppercase;
+    font-size: 6.8rem;
+    line-height: 0.95;
+  }
+
+  h5 {
+    font-family: "a-gothic";
+    font-size: 2rem;
+    padding: 2.5rem 0;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0 auto;
+    font-size: 2rem;
+    max-width: 55rem;
+    padding-bottom: 2rem;
+  }
+  @include media("<=tablet") {
+    h1 {
+      font-size: 5.8rem;
+    }
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.has-bg {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 55vh;
+  @include media(">tablet") {
+    min-height: 85vh;
+    width: 100vw !important;
+  }
+}

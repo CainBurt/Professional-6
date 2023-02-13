@@ -1,0 +1,47 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <section data-scroll-section class="cancel-page">
+        <div class="container pt-10 cancel-page-container">
+
+            <h2> {{post.title}} </h2>
+            <p>{{ post.content }} </p>
+
+            {% if error_message %}
+                <div class="error_message">{{ error_message}}</div>
+
+                {% elseif success_message %}
+                    <div class="success_message">{{success_message}}</div>
+                {% else %}
+                
+                    {{ post_form }}
+                    <button class="register-button">
+                        Cancel Registration
+                    </button>
+            
+            {% endif %}
+
+            <div class="overlay"></div>
+
+            <div class="registation-form">
+                <div class="d-flex justify-content-center align-items-center">                    
+                    <div class="form-logo"></div>                    
+                    <div class="close-btn">
+                        {{ source(directory ~ '/src/img/close.svg') }}
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <p>Are you sure to cancel your registration from this event?</p>
+                    <button class="confirm_button">Yes</button>
+                    <button class="cancel_button">No</button>
+                </div>
+
+            </div>
+            
+        </div>
+        {% include "/components/footer.twig" %}  
+    </section>
+
+{% endblock %}

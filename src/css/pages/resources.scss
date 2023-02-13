@@ -1,0 +1,104 @@
+@import "../components/media.scss";
+
+.resource-title {
+  max-width: 61rem;
+  height: auto;
+  margin-bottom: 3rem;
+  @include media("<=tablet") {
+    max-width: 70vw;
+    margin-top: 5.5rem;
+  }
+  @include media(">phone", "<=tablet") {
+    max-width: 55vw;
+    margin-top: 4rem;
+  }
+}
+
+.rc-container {
+  position: relative;
+  padding-top: 22rem;
+  padding-bottom: 12rem;
+  h2 {
+    font-size: 2.5rem;
+    
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  p {
+    font-size: 2.25rem;
+  }
+
+  @include media("<=tablet") {
+    padding-top: 15rem;
+    padding-bottom: 7rem;
+  }
+
+  @include media(">phone", "<=tablet") {
+    padding-top: 20rem;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 Shapes                   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.rs-shape-1 {
+  position: absolute;
+  top: -12%;
+  max-width: 52rem;
+  right: -2%;
+  pointer-events: none;
+  @include media("<=tablet") {
+    top: 4%;
+    max-width: 15rem;
+  }
+  @include media(">phone", "<=tablet") {
+    max-width: 25rem;
+    top: 10%;
+  }
+}
+
+.rs-shape-2 {
+  position: absolute;
+  max-width: 75rem;
+  top: -20%;
+  right: -10%;
+  pointer-events: none;
+
+  @include media("<=tablet") {
+    top: -10%;
+    max-width: 30rem;
+    right: -15%;
+  }
+  @include media(">phone", "<=tablet") {
+    max-width: 45rem;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 Blocks                
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.resources-blocks {
+  padding-bottom: 8rem;
+  h3 {
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .btn-1 {
+    display: block;
+    margin-top: 2rem;
+    width: 80%;
+    font-size: 1.75rem;
+    font-weight: 600;
+    @include media("<=tablet") {
+      width: 100%;
+      font-size: 2rem;
+    }
+  }
+}

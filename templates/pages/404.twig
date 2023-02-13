@@ -1,0 +1,32 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	
+	
+	<div class="error-page">
+        
+		{% set error_img = Image(options.image_error) %}
+		<div class="container">
+			<div class="row">
+				<h2>{{ options.title_error }}</h2>
+				<div class="error-graphic">
+					<img src="{{ error_img.src }}" alt="" />
+				</div>	
+				{{ options.desc_title }}
+
+				<div class="error-btn">
+					<p>{{ options.find_the_way }}</p>
+					<a class="orange-btn-sm" href="{{ site.url }}">
+						{{ options.back_home }}
+					</a>
+				</div>
+
+			</div>
+		</div>	
+
+
+		<div class="bg-dots-overlay"></div>
+    </div>
+
+
+{% endblock %}

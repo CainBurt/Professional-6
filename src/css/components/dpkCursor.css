@@ -1,0 +1,54 @@
+.dpkCursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 1.75rem;
+  width: 1.75rem;
+  color: white;
+  border: none;
+  mix-blend-mode: difference;
+  border-radius: 5rem;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s cubic-bezier(0.51, 1.07, 1, 1), height 0.3s cubic-bezier(0.51, 1.07, 1, 1), opacity 0.25s cubic-bezier(0.51, 1.07, 1, 1);
+}
+.dpkCursor.hover-active {
+  height: 4rem;
+  width: 4rem;
+  font-size: 0.875rem;
+}
+.dpkCursor.hover-bg {
+  border-width: 0;
+  mix-blend-mode: normal;
+}
+.dpkCursor.noCursor {
+  opacity: 0;
+}
+.dpkCursor.emogy {
+  height: 6rem;
+  width: 6rem;
+  font-size: 2rem;
+  mix-blend-mode: normal;
+}
+.dpkCursor.mixBlend {
+  height: 6rem;
+  width: 6rem;
+  background: white;
+  mix-blend-mode: exclusion;
+}
+.dpkCursor.hover-img {
+  height: 10rem;
+  width: 10rem;
+  border: none;
+  border-radius: 0;
+  background-size: cover;
+  mix-blend-mode: normal;
+}
+
+.b-larg {
+  border: 2rem solid transparent;
+  border-radius: 50%;
+}/*# sourceMappingURL=dpkCursor.css.map */

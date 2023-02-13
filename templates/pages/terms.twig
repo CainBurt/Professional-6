@@ -1,0 +1,27 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <section data-scroll-section class="terms-page position-relative bg-purple">
+    
+        {# <div data-scroll data-scroll-speed="-1.25" data-scroll-delay=".07" class="left-ball">
+            <img src="{{ theme.link ~ "/src/img/b2.png"}}" alt="Nike Footballverse">
+       </div> #}
+       
+        <div class="container terms-container">
+            
+            <div class="row">
+                <div class=" offset-lg-2 col-lg-8 pe-5">
+                      {{ post.content }}
+                </div>
+                
+            </div>
+        </div>
+
+        {% include "/components/footer.twig" %}  
+
+        {# <div data-scroll data-scroll-speed="-2.25" class="right-ball">
+            <img src="{{ theme.link ~ "/src/img/b1.png"}}" alt="Nike Footballverse">
+        </div> #}
+
+    </section>
+{% endblock %}

@@ -1,0 +1,99 @@
+{
+    "key": "group_62209b4fd5b9b",
+    "title": "Analytics\/Tracking",
+    "fields": [
+        {
+            "key": "field_62209b55c62c2",
+            "label": "Content Scripts",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Insert in these text boxes scripts such as GA, Facebook Pixel etc.\r\n\r\nWrap all code in <script> tags and make sure they all contain valid javascript.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_62209b67c62c3",
+            "label": "Head Scripts",
+            "name": "head_scripts",
+            "type": "textarea",
+            "instructions": "Scripts to include before <\/head>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62209b70c62c4",
+            "label": "Body Start Scripts",
+            "name": "body_start_scripts",
+            "type": "textarea",
+            "instructions": "Scripts to include at the top of <body>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62209b7cc62c5",
+            "label": "Body End Scripts",
+            "name": "body_end_scripts",
+            "type": "textarea",
+            "instructions": "Scripts to include before <\/body>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-analytics-tracking"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1646304345
+}

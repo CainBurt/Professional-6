@@ -1,0 +1,36 @@
+<section data-scroll-section class="bg-white">
+   {% set youtubeid = post.get_field('youtube_id') %}
+   {% set youtubeidmob = post.get_field('youtube_id_mob') %}
+    <div class="slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <img src="{{ heroImage }}" alt="hero image" />
+                {% if youtubeid %}
+                    <div class="swiper-slide">
+                        <div class="swiper-image" data-swiper-parallax-x="50%">
+                            <div class="swiper-image-inner" style="background-image:url('{{ theme.link ~ "/src/img/home/vid-bg.jpg"}}');" >
+                                <div class="vimeo-wrapper">
+                                    {% if fn('wp_is_mobile') %}
+                                      <div id="vid1" data-player-id="{{ youtubeidmob }}"></div>                                    
+			                        {% else %}
+                                        <div id="vid1" data-player-id="{{ youtubeid }}"></div>                                    
+			                        {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="pagination"></div>
+
+        <div id="mute-unmute" class="mute"></div>
+        
+
+        <a href="#here" data-scroll-to class="btn-round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9.488" height="5.805" viewBox="0 0 9.488 5.805">
+                  <path id="Path_20" data-name="Path 20" d="M-3546.34-1269l-3.684,3.684-3.684-3.684" transform="translate(3554.768 1270.061)" fill="none" stroke-linecap="round" stroke="#fff" stroke-width="1.4"></path>
+              </svg>
+        </a>
+    </div>
+</section>

@@ -1,0 +1,205 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Home Intro       
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.home-intro {
+  padding-top: 10rem;
+  position: relative;
+  overflow: visible;
+  text-align: center;
+}
+.home-intro .home-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-intro .home-title h1 {
+  max-width: 100rem;
+  font-family: sombra-black, sans-serif;
+  font-size: 3.5rem;
+  line-height: 0.95;
+  padding-bottom: 3rem;
+}
+@media (max-width: 1024px) {
+  .home-intro .home-title h1 {
+    font-size: 4.5rem;
+  }
+}
+.home-intro .home-title p {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  max-width: 80rem;
+  padding-bottom: 2rem;
+}
+
+.select_exp {
+  padding-bottom: 6rem;
+}
+@media (max-width: 1024px) {
+  .select_exp {
+    padding-bottom: 0;
+  }
+  .select_exp .col-xl-6 {
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 1025px) {
+  .select_exp {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+}
+.select_exp .city-title {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .select_exp .city-title {
+    padding-top: 1rem;
+  }
+}
+.select_exp .city-title img {
+  max-width: 10rem;
+  padding-bottom: 2.5rem;
+}
+.select_exp .city-title h3,
+.select_exp .city-title h5 {
+  text-transform: inherit;
+  cursor: pointer;
+  color: #000;
+  text-align: center;
+  pointer-events: none !important;
+}
+.select_exp .city-title h3 {
+  font-size: 5.5rem;
+  line-height: 0.95;
+  font-family: sombra-black, sans-serif;
+}
+@media (max-width: 1024px) {
+  .select_exp .city-title h3 {
+    font-size: 3.5rem;
+  }
+}
+.select_exp .city-title h5 {
+  width: 50%;
+  font-size: 2rem;
+  text-transform: inherit;
+  padding-top: 2rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+}
+.select_exp .city-title a.btn-1 {
+  border-radius: 2rem;
+  margin-top: 2.5rem;
+  font-family: sombra-black, sans-serif;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  color: #e6dace;
+}
+@media (max-width: 767px) {
+  .select_exp .col-md-6 {
+    margin-bottom: 6rem;
+  }
+}
+
+.img-detect-home {
+  overflow: hidden;
+  position: relative;
+}
+.img-detect-home img {
+  transform: scale(1.1, 1.1);
+  transition: transform 2.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-delay: 0.1s;
+}
+.img-detect-home.is-inview img {
+  transform: scale(1, 1);
+}
+
+.prlx-img1 {
+  position: absolute;
+  height: auto;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.prlx-img1 img {
+  max-width: 28rem;
+}
+@media (max-width: 767px) {
+  .prlx-img1 img {
+    max-width: 22rem;
+  }
+}
+
+.prlx-img2 {
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  right: 5%;
+}
+.prlx-img2 img {
+  max-width: 32rem;
+}
+@media (max-width: 767px) {
+  .prlx-img2 img {
+    max-width: 22rem;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               Blur  Ball      
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.left-ball,
+.right-ball {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .left-ball,
+  .right-ball {
+    display: block;
+  }
+}
+
+.left-ball {
+  position: absolute;
+  top: 5%;
+  left: -22%;
+}
+.left-ball img {
+  max-width: 70rem;
+  width: auto;
+}
+
+.right-ball {
+  position: absolute;
+  bottom: -30rem;
+  right: -16%;
+}
+.right-ball img {
+  max-width: 60rem;
+  width: auto;
+}
+
+@media (max-width: 1024px) {
+  .right-ball {
+    display: block;
+    bottom: -20rem;
+    right: -35%;
+  }
+  .right-ball img {
+    max-width: 40rem;
+  }
+}
+.creator.right-ball {
+  bottom: -27rem;
+  right: -15rem;
+}
+
+.menu-ball {
+  bottom: -10rem;
+}/*# sourceMappingURL=homepage.css.map */

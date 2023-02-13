@@ -1,0 +1,27 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+
+    {% include 'components/flexible.twig' %}
+    
+        <section data-scroll-section="" class="single-page">
+
+        <div class="container">
+            <article class="post-type-{{ post.post_type }} full-column-text" id="post-{{ post.ID }}"       
+                {# <p class="blog-author">
+                    <span>By</span>
+                    <a href="{{ post.author.path }}"> {{ post.author.name }} </a>
+                    <span>&bull;</span> {{ post.post_date|date }}
+                </p> #}
+                <div class="article-body">
+                    {{ post.content }}
+                </div>
+                
+            </article>
+        </div>    
+    </section>
+    
+
+
+{% endblock %}

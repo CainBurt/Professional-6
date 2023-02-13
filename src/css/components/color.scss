@@ -1,0 +1,36 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*                                                 *
+*                  Color                          *
+*                                                 *
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+:root {
+  --default: #fff;
+  --orange: #000;
+  --orange1: #000;
+  --blue: #000;
+  --green: #7CDB41;
+  --pink: #FF8256;
+  --pink2: #FF8256;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.bg-white {
+  background: white;
+}
+
+.bg-black {
+  background: black;
+  color: white;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-purple{
+  background: #bc9fe6;
+}

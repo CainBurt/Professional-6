@@ -1,0 +1,56 @@
+{% extends "base.twig" %}
+    {% block content %}
+
+        <div class="overlay"></div>
+        <div class="creator registation-form">
+            <div class="creator close-btn">
+                {{ source(directory ~ '/src/img/close.svg') }}
+            </div>
+            {% for ses in post_sessions %}
+                {% set contact_f = ses.form_cf7 %}
+                <div class="creator-form">
+                    {{ contact_f }}
+                </div>
+            {% endfor %}
+        </div>
+
+
+        <section data-scroll-section class="position-relative" style="background-color: #e6dace">
+
+            {% for ses in post_sessions %}
+                        
+            {% set pdesc = ses.event_description  %}                
+            {% set pimg = TimberImage(ses.event_image) %}
+            {% set pimg_alt = pimg.title ? pimg.title : pimg.alt %}
+
+
+                <div class="container ps-0 pb-container">
+                        {# <div class="row"> #}
+                        <div class="col-xl-6 has-bg" style="background-image:url('{{ pimg }}');">
+                        
+                        </div>
+
+                        {# <div class="col-xl-6 ps-xl-8 pb-content my-auto">                       
+                                <div  class="appear-y d1" data-scroll>
+                                    {{ pdesc }}
+                                </div>
+
+                                <div class="appear-y d2" data-scroll>
+                                    <div class="d-inline-flex flex-column">
+                                        <button class="register-button">
+                                            {{ options.register_btn }}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                #}
+                </div>
+           {% endfor %}
+
+           {% include "/components/footer.twig" %}  
+
+            {#  #}
+           
+      </section>
+
+    {% endblock %}

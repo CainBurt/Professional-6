@@ -1,0 +1,35 @@
+@import "../components/media.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  footer          
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+footer {
+  padding-top: 6rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+  z-index: 2;
+  .text-center > a{
+      font-weight: 600;
+  }
+  span,
+  a {
+    font-size: 1.7rem;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 300;
+
+    svg {
+      height: 3.5rem;
+      width: 4.5rem;
+    }
+  }
+
+  @include media("<phone") {
+    .row {
+      .col-md-4{
+        text-align: center !important;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

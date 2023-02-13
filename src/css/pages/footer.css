@@ -1,0 +1,29 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  footer          
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer {
+  padding-top: 6rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+  z-index: 2;
+}
+footer .text-center > a {
+  font-weight: 600;
+}
+footer span,
+footer a {
+  font-size: 1.7rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+}
+footer span svg,
+footer a svg {
+  height: 3.5rem;
+  width: 4.5rem;
+}
+@media (max-width: 767px) {
+  footer .row .col-md-4 {
+    text-align: center !important;
+    padding-bottom: 2rem;
+  }
+}/*# sourceMappingURL=footer.css.map */

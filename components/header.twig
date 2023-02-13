@@ -1,0 +1,64 @@
+<header class="container">
+	<a class="header-logo" href="{{ site.url }}">
+		<img src="{{ main_logo }}" alt="{{ main_logo.alt }}">
+	</a>
+	
+	<div class="menu-links d-desktop align-items-center">
+		{% set main_menu_items = main_menu.get_items %}
+			{% for menu in main_menu_items %}
+				<a class="link" href="{{ menu.link }}"> {{ menu.title }} </a>
+			{% endfor %}
+	</div>
+
+	<div class="d-desktop">
+		{% for slink in options.social_links %}
+		 {% set  linkicon = TimberImage(slink.link_icon) %}
+		 {% set  linkicon_alt = linkicon.title ? linkicon.title : linkicon.alt %}		 
+		 {% set  linkbtn = slink.link_btn %}
+			<a href="{{ linkbtn.url }}"  target="_blank" class="social-icons">
+				<img class="img-fluid" src="{{ linkicon }}" alt="{{ linkicon_alt }}">
+			</a>
+		 {% endfor %}
+	</div>
+</header>
+
+
+
+
+{# Mobile menu #}
+
+
+
+<div class="menu h-desktop">
+	<input type="checkbox" id="trigger" class="mob-menu-trigger" />
+	<label for="trigger" class="menu-close"></label>
+  
+	<div class="mob-menu">
+		<div class="mob-logo container">
+			<a class="header-logo" href="{{ site.url }}">
+				<img src="{{ main_logo }}" alt="{{ main_logo.alt }}">
+			</a>
+		</div>
+	
+		{% set main_menu_items = main_menu.get_items %}
+		<ul>
+			{% for menu in main_menu_items %}
+				<li><a class="link" href="{{ menu.link }}"> {{ menu.title }} </a></li>
+			{% endfor %}
+		</ul>
+
+		<div class="mob-social">
+			{% for slink in options.social_links %}
+
+				{% set  linkicon = TimberImage(slink.link_icon) %}
+				{% set  linkicon_alt = linkicon.title ? linkicon.title : linkicon.alt %}		 
+				{% set  linkbtn = slink.link_btn %}
+					<a  href="{{ linkbtn.url }}"  target="_blank" class="social-icons">
+						<img class="img-fluid" src="{{ linkicon }}" alt="{{ linkicon_alt }}">
+					</a>
+				{% endfor %}
+		</div>
+
+	</div>
+</div>
+  

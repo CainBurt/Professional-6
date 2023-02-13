@@ -1,0 +1,28 @@
+html[data-direction=down] header {
+  transform: translate3d(0, -800%, 0);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 2.5rem;
+  z-index: 99;
+  color: white;
+  mix-blend-mode: difference;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.7s ease;
+}
+header ul li {
+  display: inline;
+  list-style: none;
+}
+header .header-logo svg {
+  fill: #fff;
+  height: 2rem;
+  width: 8rem;
+}
+header .links a {
+  margin-left: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: normal;
+}/*# sourceMappingURL=header-desktop.css.map */

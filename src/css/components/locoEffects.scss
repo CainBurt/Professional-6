@@ -1,0 +1,154 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             Effects With Scroll
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// ! for the color Transition
+
+[data-scroll-container] {
+  transition: background-color 0.8s ease;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 Appear On Scroll  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+//Appear on Scroll Recomanded    data-scroll-repeat
+
+.appear {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  &.is-inview {
+    opacity: 1;
+  }
+}
+
+//Appear on Scroll  Not Recomanded data-scroll-repeat
+
+.appear-y {
+  opacity: 0;
+  transform-origin: 50% 50%;
+  will-change: opacity, transform;
+  transform: translate(0px, 60px);
+  transition: 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  &.is-inview {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+ 
+}
+
+// !2! Effects For Big Titles
+
+.appear-title {
+  .appears-dpk:first-child span {
+    transition-delay: 0.15s;
+  }
+
+  .appears-dpk:nth-child(2) span {
+    transition-delay: 0.3s;
+  }
+
+  .appears-dpk:nth-child(3) span {
+    transition-delay: 0.45s;
+  }
+
+  .appears-dpk:nth-child(4) span {
+    transition-delay: 0.6s;
+  }
+
+  .appears-dpk {
+    overflow: hidden;
+    white-space: nowrap;
+    width: max-content;
+    line-height: 3rem;
+    display: block;
+  }
+
+  .appears-dpk > span {
+    display: block;
+    transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-delay: 0.2s;
+    transform: translate(0, 100%);
+  }
+}
+
+.appear-title.is-inview .appears-dpk > span {
+  transform: translate(0, 0);
+}
+
+// !3! scale Effects For img
+
+.img {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.img.is-inview {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 1s ease;
+  will-change: transform;
+}
+
+// !4! Zoom in Effects For img
+
+.img-detect {
+  overflow: hidden;
+}
+
+.img-detect img {
+  transform: scale(1.5, 1.5);
+  transition: transform 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-delay: 0.1s;
+}
+
+.img-detect.is-inview img {
+  transform: scale(1, 1);
+}
+
+.lgr {
+  opacity: 0;
+}
+
+#forward {
+  position: relative;
+  overflow-x: hidden;
+  padding: 7rem 0 7rem 0vw;
+  font-family: "Poppins", sans-serif;
+
+  marquee {
+    padding: 2rem;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 15rem;
+    line-height: 50%;
+    white-space: nowrap;
+    font-weight: 900;
+    color: transparent !important;
+    -webkit-text-stroke: 0.5px #000;
+    text-align: center;
+  }
+  h2 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    white-space: nowrap;
+    color: #000;
+  }
+  @media print, screen and (max-width: 40rem) {
+    h1 {
+      font-size: 7rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+#scrollDirection {
+  min-height: 100vh;
+  overflow: hidden;
+  p {
+    white-space: nowrap;
+  }
+}

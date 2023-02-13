@@ -1,0 +1,113 @@
+.resource-title {
+  max-width: 61rem;
+  height: auto;
+  margin-bottom: 3rem;
+}
+@media (max-width: 1024px) {
+  .resource-title {
+    max-width: 70vw;
+    margin-top: 5.5rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .resource-title {
+    max-width: 55vw;
+    margin-top: 4rem;
+  }
+}
+
+.rc-container {
+  position: relative;
+  padding-top: 22rem;
+  padding-bottom: 12rem;
+}
+.rc-container h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.rc-container p {
+  font-size: 2.25rem;
+}
+@media (max-width: 1024px) {
+  .rc-container {
+    padding-top: 15rem;
+    padding-bottom: 7rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .rc-container {
+    padding-top: 20rem;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 Shapes                   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.rs-shape-1 {
+  position: absolute;
+  top: -12%;
+  max-width: 52rem;
+  right: -2%;
+  pointer-events: none;
+}
+@media (max-width: 1024px) {
+  .rs-shape-1 {
+    top: 4%;
+    max-width: 15rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .rs-shape-1 {
+    max-width: 25rem;
+    top: 10%;
+  }
+}
+
+.rs-shape-2 {
+  position: absolute;
+  max-width: 75rem;
+  top: -20%;
+  right: -10%;
+  pointer-events: none;
+}
+@media (max-width: 1024px) {
+  .rs-shape-2 {
+    top: -10%;
+    max-width: 30rem;
+    right: -15%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .rs-shape-2 {
+    max-width: 45rem;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 Blocks                
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.resources-blocks {
+  padding-bottom: 8rem;
+}
+.resources-blocks h3 {
+  font-size: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.resources-blocks .btn-1 {
+  display: block;
+  margin-top: 2rem;
+  width: 80%;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .resources-blocks .btn-1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=resources.css.map */

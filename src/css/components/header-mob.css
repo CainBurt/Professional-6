@@ -1,0 +1,138 @@
+.mob-menu {
+  position: fixed;
+  z-index: 1000;
+  left: 100vw;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  color: #000;
+  pointer-events: none;
+  will-change: transform;
+  transition: transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+.mob-menu:after, .mob-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+.mob-menu:before {
+  z-index: 1;
+  width: 71vw;
+  background: var(--pink);
+  transition: transform 0.75s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+.mob-menu:after {
+  z-index: 2;
+  width: 100vw;
+  background: var(--pink);
+  transition: width 0.85s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+}
+.mob-menu ul {
+  padding-top: 22vh;
+  padding-left: 5vw;
+  list-style-type: none;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.25s;
+}
+.mob-menu ul li {
+  position: relative;
+  margin: 0;
+  padding-bottom: calc(3rem + 2.5vh);
+  line-height: 1;
+}
+.mob-menu ul li:before {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: -20px;
+  top: 0.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--pink);
+}
+.mob-menu ul li a {
+  font-family: "a-gothic";
+  font-size: 3rem;
+}
+.mob-menu .mob-social {
+  position: absolute;
+  bottom: 20%;
+  left: 5vw;
+}
+.mob-menu .mob-social a img {
+  max-width: 5rem;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Animation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.mob-menu-trigger {
+  display: none;
+}
+.mob-menu-trigger:checked ~ .mob-menu {
+  pointer-events: auto;
+  transform: translate3d(-100vw, 0, 0);
+}
+.mob-menu-trigger:checked ~ .mob-menu:before {
+  transform: translate3d(-70vw, 0, 0);
+}
+.mob-menu-trigger:checked ~ .mob-menu:after {
+  width: 2vw;
+}
+.mob-menu-trigger:checked ~ .mob-menu > ul {
+  opacity: 1;
+}
+.mob-menu-trigger:checked ~ .menu-close:before {
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+.mob-menu-trigger:checked ~ .menu-close:after {
+  top: 0px;
+  width: 75%;
+  left: 0%;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    Close Button
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.menu-close {
+  position: fixed;
+  top: 4.25rem;
+  right: 2rem;
+  width: 5rem;
+  height: 2rem;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+.menu-close:after, .menu-close:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2.5px;
+  width: 75%;
+  background: white;
+  transition: all 0.8s ease;
+}
+.menu-close:after {
+  top: 10px;
+  width: 50%;
+  left: 25%;
+}
+
+.mob-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10.5rem;
+}/*# sourceMappingURL=header-mob.css.map */

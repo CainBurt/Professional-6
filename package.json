@@ -1,0 +1,27 @@
+{
+  "name": "nikebymarina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --config  webpack.prod.config.js --mode production"
+  },
+  "author": "Crowd",
+  "license": "ISC",
+  "devDependencies": {
+    "include-media": "^1.4.10",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
+    "@vimeo/player": "^2.18.0",
+    "gsap": "^3.10.3",
+    "gulp": "^4.0.2",
+    "imagesloaded": "^5.0.0",
+    "locomotive-scroll": "^4.1.4",
+    "splitting": "^1.0.6",
+    "swiper": "^8.4.4"
+  }
+}

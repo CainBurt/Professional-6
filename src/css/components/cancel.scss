@@ -1,0 +1,89 @@
+@import "./media.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             Terms Page              
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.cancel-page {
+  .cancel-page-container {
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    min-height: 85vh;
+
+    @include media("<=tablet") {
+      
+    }
+  }
+
+  h2 {
+    font-size: 3.8rem;
+    color: var(--blue);
+    font-family: palatino;
+    font-weight: 600;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  h4 {
+    padding-bottom: 1.5rem;
+    margin-top: 4rem;
+    font-size: 2.8rem;
+    color: var(--blue);
+    font-family: palatino;
+  }
+
+  p strong {
+    padding-bottom: 1.5rem;
+    margin-top: 4rem;
+    font-size: 2.8rem;
+    display: block;
+    color: var(--blue);
+    font-family: palatino;
+  }
+
+  p {
+    color: var(--blue);
+    font-size: 2rem;
+    font-family: palatino;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .contact-form {
+    width: 85%;
+    .row {
+      padding-top: 1vw;
+    }
+  }
+  .wpcf7-response-output {
+    width: 61%;
+  }
+
+  .register-button {
+    margin-left: auto;
+    margin-right: auto;
+    @include media("<phone") {
+      text-align: center;
+      white-space: nowrap;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .error_message,
+  .success_message {
+    padding-bottom: 1.5rem;
+    font-size: 2.8rem;
+    color: var(--blue);
+    font-family: palatino;
+    text-align: center;
+  }
+
+  .error_message {
+    color: red;
+  }
+  .success_message {
+    color: green;
+  }
+}

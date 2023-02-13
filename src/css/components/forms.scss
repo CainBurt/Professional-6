@@ -1,0 +1,524 @@
+@import "./media.scss";
+
+.confirm_button,
+.cancel_button,
+.register-button {
+  background-color: var(--blue);
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1.4rem 7rem;
+  font-family: "a-gothic";
+
+  margin-top: 4rem;
+  display: block;
+  border: none;
+  border-radius: 5rem;
+  box-sizing: border-box;
+  border: 1px solid var(--blue);
+  box-sizing: border-box;
+
+  &:hover {
+    color: var(--blue);
+    background-color: #fefefe;
+    transition: background-color 0.2s ease;
+    border: 1px solid var(--blue);
+  }
+
+  @include media("<=tablet") {
+    width: 100%;
+  }
+}
+
+.confirm_button,
+.cancel_button {
+  text-align: center;
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1.4rem 8rem 1rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.mt-5vh {
+  margin-top: 7.5vh;
+
+  @include media(">tablet") {
+    margin-right: 3rem;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Registration Form                
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.cf-forms {
+  display: none;
+}
+.registation-form {
+  position: fixed;
+  z-index: 999;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #e6dace;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+
+  width: 50vw;
+  min-height: 30rem;
+  @include media("<=tablet") {
+    width: 85vw;
+    min-height: 50vh;
+  }
+
+  .close-btn {
+    color: var(--blue);
+    font-size: 4rem;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    cursor: pointer;
+
+    svg {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  .form-logo {
+    margin-top: 6%;
+  }
+}
+
+.women-only {
+  font-family: "nfun";
+  font-size: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.wpcf7-spinner {
+  position: absolute;
+  bottom: 17%;
+  left: 0%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  Contact Form              
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.contact-form {
+  background: #e6dace;
+  width: 100%;
+  border-radius: 2rem;
+  .col-xl-6 {
+    padding-right: 2rem;
+  }
+
+  h3 {
+    font-size: 4.8rem;
+    font-family: sombra-black, sans-serif;
+    font-weight: 600;
+    padding-top: 2%;
+    padding-bottom: 0;
+    line-height: 0.95;
+    margin: 0;
+    text-align: center;
+  }
+
+  .submit-btn {
+    display: block !important;
+    padding: 2rem 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    text-align: center;
+    // width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 300;
+    background-color: var(--blue);
+    color: #e6dace;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    border: 1px solid var(--blue);
+    box-sizing: border-box;
+    &:hover {
+      color: var(--blue);
+      background-color: #fefefe;
+      transition: background-color 0.2s ease;
+      border: 1px solid var(--blue);
+      box-sizing: border-box;
+    }
+  }
+}
+
+.contact-form form ::placeholder {
+  color: #000;
+  font-size: 2rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+
+  font-weight: 300;
+  opacity: 1;
+  padding-left: 0;
+  margin: 0;
+  text-indent: 0;
+}
+input {
+  accent-color: #FF8256;
+  text-indent: 0;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="number"],
+.contact-form input[type="url"],
+select {
+  width: 100%;
+  padding: 1% 0;
+  text-indent: 0 !important;
+  background: none;
+
+  font-size: 2rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+
+  text-indent: 10px;
+  border: none;
+  color: #757575;
+  border-bottom: 1.5px solid black;
+  outline: none;
+  margin-top: 4rem;
+  border-radius: 0;
+}
+
+.contact-form select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background: transparent
+    url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' width='9' height='9' xmlns='http://www.w3.org/2000/svg'><g><path d='M12 21l-12-18h24z'/></g></svg>")
+    no-repeat;
+  background-position: right 10px;
+  cursor: pointer;
+
+}
+
+.wpcf7-response-output {
+  border: none;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: none !important;
+  color: white;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 2rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem !important;
+
+  width: 82%;
+  font-size: 1.75rem !important;
+  font-family: sombra-black, sans-serif;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: 0rem;
+  top: 0.3rem;
+  cursor: pointer;
+  width: 90%;
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.3); /* IE */
+  -moz-transform: scale(1.3); /* FF */
+  -webkit-transform: scale(1.3); /* Safari and Chrome */
+  -o-transform: scale(1.3); /* Opera */
+  transform: scale(1.3);
+  padding: 10px;
+}
+
+@media only screen and (max-width: 769px){
+  input[type="checkbox"] {
+    top: 0.1rem;
+  }
+}
+
+.col-xl-12.pt-4 {
+  padding-top: 3rem !important;
+}
+
+.accept {
+  font-size: 1.75rem;
+  padding-bottom: 0.7rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  & > * {
+    font-family: neue-haas-grotesk-display, sans-serif;
+  }
+  a {
+    border-bottom: 0.75px solid black;
+    &:hover {
+      color: var(--blue);
+      border-bottom: 1px solid var(--blue);
+    }
+  }
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 1.5rem !important;
+  font-family: "palatino";
+  display: none !important;
+}
+
+form.invalid .wpcf7-response-output {
+  background-color: #ff2200;
+}
+
+.wpcf7-not-valid-tip {
+  color: #ff2200 !important;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  background-color: #5fbb46;
+}
+
+.email-info {
+  position: relative;
+  p {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 110%;
+  }
+}
+
+.wpcf7-not-valid {
+  border-bottom: 1px solid red !important;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Covers Only Desktop
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.contact-form {
+  padding: 4vw;
+  padding-top: 4rem !important;
+  padding-bottom: 0;
+}
+
+@media (min-width: 1025px) {
+  .contact-form {
+    padding-top: 0.5rem;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                         Covers Tablet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="number"],
+  .contact-form input[type="url"],
+  select {
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+  }
+}
+
+/* for ipad pro landscape only */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="number"],
+  .contact-form input[type="url"],
+  select {
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+  }
+  .contact-form .submit-btn {
+    padding: 0.75rem 2rem;
+    margin-top: 4rem;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                         Covers Mobile
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (max-width: 767px) {
+  .wpcf7-response-output,
+  .wpcf7 form .wpcf7-response-output {
+    width: 80%;
+    line-height: 1.3;
+    border-radius: 5rem;
+    padding: 1.5rem 2rem;
+  }
+  .logo {
+    padding-bottom: 5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form p {
+    padding: 0;
+    margin-bottom: 0.35rem;
+    width: 100%;
+  }
+  .row > p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.inactive {
+  pointer-events: none !important;
+  opacity: 0.5;
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+
+.o-hide {
+  overflow: hidden;
+}
+
+.back-btn {
+  cursor: pointer;
+  padding-left: 5rem;
+  padding-bottom: 6rem;
+  @include media(">tablet") {
+    margin-top: -5rem;
+  }
+
+  display: inline-flex;
+  align-items: center;
+  svg {
+    fill: var(--blue);
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+  span {
+    padding-left: 1rem;
+    color: var(--blue);
+    font-size: 2rem;
+    font-family: palatino;
+    line-height: 1;
+    font-weight: bold;
+  }
+}
+
+.wpcf7-spinner {
+  position: absolute !important;
+  bottom: 11.5% !important;
+  left: -1% !important;
+
+  @include media("<phone") {
+    position: absolute !important;
+    bottom: 10.5% !important;
+    left: -6% !important;
+  }
+}
+
+.rtl {
+  .container.contact-form {
+    direction: rtl !important;
+  }
+
+  .contact-form select {
+    background-position: left 10px;
+  }
+
+  .wpcf7 input[type="url"],
+  .wpcf7 input[type="email"],
+  .wpcf7 input[type="tel"] {
+    direction: rtl !important;
+  }
+
+  .registation-form .close-btn {
+    right: auto;
+    left: 4%;
+  }
+  .accept {
+    padding-right: 1rem;
+  }
+  .contact-form h3 {
+    padding-right: 1rem !important;
+  }
+}
+
+.remaining_slots_text_area {
+  display: block;
+  padding-top: 1.5rem;
+  font-size: 2rem !important;
+  text-align: center !important;
+  font-family: sombra-black, sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              Show QR Code            
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+
+.qrcode {
+  display: none;
+}
+
+.wpcf7-form.sent {
+  .contact-form .row,
+  h3 {
+    display: none;
+  }
+  .wpcf7-response-output{
+    margin-bottom: 4rem;
+  }
+  .qrcode {
+    .qr-title {
+      font-size: 4rem !important;
+      font-family: sombra-black, sans-serif !important;
+      line-height: 1.1;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+
+    display: block;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    img {
+      max-width: 30rem !important;
+      height: auto;
+    }
+  }
+}
+
+.hidden{
+  display: none;
+}

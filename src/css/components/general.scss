@@ -1,0 +1,126 @@
+@import "../components/media.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
+
+  @include media(">tablet") {
+    font-size: calc(100vw / 1920 * 10);
+  }
+
+  @include media(">phone", "<=tablet") {
+    font-size: calc(100vw / 992 * 10);
+  }
+
+  @include media("<phone") {
+    font-size: calc(100vw / 576 * 10);
+  }
+
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    font-size: calc(100vw / 1080 * 10);
+  }
+
+  @media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+    font-size: calc(100vw / 1366 * 10);
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 GENERAL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  line-height: 1.5;
+  color: #000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+   font-family: "nfun", serif;
+}
+
+main {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+
+img {
+  user-select: none !important;
+  -webkit-user-drag: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Hide Default Scrollbar When use locomotive
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+main::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+html,
+body,
+main {
+  scrollbar-width: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Selection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+::selection {
+  color: var(--blue);
+  background: var(--pink);
+}
+
+h1,
+h2,
+h3{
+  line-height: .95;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: palatino;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+p {
+  // font-family: palatino;
+  // font-weight: 300;
+  // font-size: 2.25rem;
+  line-height: 1.25 !important;
+}
+
+
+

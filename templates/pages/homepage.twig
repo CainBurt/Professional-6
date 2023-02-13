@@ -1,0 +1,85 @@
+{% extends "base.twig" %}
+
+    {% block content %}
+
+    {# {% include "/components/slider.twig" %}   #}
+        {% include "/components/hero.twig" %}  
+
+
+    <section class="home-intro bg-purple" id="here">
+       {# <div data-scroll data-scroll-speed="-2.5" data-scroll-delay=".06" class="left-ball">
+            <img src="{{ theme.link ~ "/src/img/b2.png"}}" alt="Nike Footballverse">
+       </div> #}
+       
+        {% set desc = post.get_field('home_para') %}
+       <div class="container">
+            <div class="home-title" data-scroll>
+                {{ desc }}
+            </div>
+        </div>
+
+   
+
+        <div class="select_exp bg-purple">        
+            <div class="container">           
+
+                <div class="row g-2">
+                    {% for city in post.meta('cities') %}
+
+                        {% set cityimg = TimberImage(city.city_image) %}
+                        {% set city_alt = cityimg.title ? cityimg.title : cityimg.alt %}
+
+                        {% set cityimg1 = TimberImage(city.city_image2) %}
+                        {% set cityimg2 = TimberImage(city.city_image3) %}
+                        
+
+
+
+                    {% set citytitle = city.city_title %}
+                    {% set city_page_link = city.city_page_link %}
+
+                    <div class="col-xl-6 position-relative">
+                        
+                            <div class="img-detect-home" data-scroll>
+                                <img class="img-fluid py-lg-6" src="{{ cityimg }}" alt="{{ city_alt }}">
+
+                                {% if city.city_image2 %}
+                                <div class="prlx-img1" data-scroll data-scroll-speed=".6" data-scroll-delay=".04">
+                                    <img  src="{{ cityimg1 }}" alt="{{ city_alt }}">
+                                </div>
+                                {% endif %}
+
+                                {% if city.city_image3 %}
+                                <div class="prlx-img2" data-scroll data-scroll-speed=".75" data-scroll-delay=".05">
+                                  <img  src="{{ cityimg2 }}" alt="{{ city_alt }}">
+                                </div>
+                                {% endif %}
+                                
+
+                            </div>
+
+                            <div data-scroll class="city-title appear-y d-{{ loop.index }} " >
+                                {# <img  src="{{ main_logo }}" alt="{{ main_logo.alt }}"> #}
+
+                                {{ citytitle }}
+                                {% if city_page_link %}
+                                    <a class="btn-1" href="{{ city_page_link }}"> Book a slot </a>
+                                {% endif %}
+
+                            </div>
+        
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+       {% include "/components/footer.twig" %}  
+
+       {# <div data-scroll data-scroll-speed="-2.25" class="right-ball">
+            <img src="{{ theme.link ~ "/src/img/b1.png"}}" alt="Nike Footballverse">
+        </div> #}
+
+    </section>
+
+{% endblock %}

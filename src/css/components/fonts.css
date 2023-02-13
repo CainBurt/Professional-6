@@ -1,0 +1,24 @@
+@font-face {
+  font-family: nfun;
+  src: url("./font/p-mid.otf") format("opentype");
+}
+@font-face {
+  font-family: palatino;
+  src: url("./font/p-mid.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: palatino;
+  src: url("./font/p-light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: a-gothic;
+  src: url("./font/avantgarde-bold.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: sombra-black;
+  src: url("./font/Sombra-Black.otf") format("opentype");
+  font-weight: 300;
+}/*# sourceMappingURL=fonts.css.map */

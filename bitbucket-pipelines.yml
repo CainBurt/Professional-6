@@ -1,0 +1,20 @@
+image: andthensome/docker-node-rsync
+image: node:16.15.0
+
+pipelines:
+  branches:
+    master: 
+      - step:
+          name: Build & Deploy Package to Staging
+          deployment: staging
+          script:
+          - npm install
+          - npm run build
+          - pipe: atlassian/rsync-deploy:0.7.1
+            variables:
+              USER: 'u1931-kxe31eit214r'
+              SERVER: ''
+              REMOTE_PATH: ''
+              LOCAL_PATH: '${BITBUCKET_CLONE_DIR}/'
+              DEBUG: 'true'
+              SSH_PORT: '18765'

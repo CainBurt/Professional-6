@@ -1,0 +1,104 @@
+.col-12 {
+  padding-top: 2rem;
+}
+.col-12 p {
+  line-height: 0.95;
+  font-family: palatino;
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+}
+
+.inner-page {
+  padding-top: 20rem;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .inner-page {
+    padding-top: 16rem;
+  }
+}
+.inner-page .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.inner-page .intro h1 {
+  max-width: 126rem;
+  font-family: "a-gothic";
+  text-transform: uppercase;
+  font-size: 6.8rem;
+  line-height: 0.95;
+  padding-bottom: 3rem;
+}
+@media (max-width: 1024px) {
+  .inner-page .intro h1 {
+    font-size: 5.5rem;
+  }
+}
+.inner-page .intro p {
+  font-family: palatino;
+  font-weight: 300;
+  font-size: 2rem;
+  max-width: 60rem;
+  padding-bottom: 8rem;
+}
+@media (max-width: 1024px) {
+  .inner-page .intro p {
+    font-size: 2rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.event-container.container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 1025px) {
+  .event-container.container {
+    padding-right: 13.5vw;
+    padding-left: 13.5vw;
+    padding-bottom: 10rem;
+  }
+}
+
+.block {
+  position: relative;
+  padding-bottom: 1.6rem;
+}
+@media (max-width: 1024px) {
+  .block {
+    padding-bottom: 5rem;
+  }
+}
+.block .event-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+  max-width: 60rem;
+}
+.block .event-desc .register-button {
+  margin-top: 2rem;
+}
+.block .event-desc h2,
+.block .event-desc h3 {
+  font-family: "a-gothic";
+  text-transform: uppercase;
+}
+.block .event-desc h2 {
+  font-size: 5.5rem;
+  line-height: 0.95;
+  padding-bottom: 1rem;
+}
+.block .event-desc h3 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.block .event-desc p {
+  font-family: "palatino";
+  font-size: 2rem;
+}/*# sourceMappingURL=inner-pages.css.map */

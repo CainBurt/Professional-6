@@ -1,0 +1,218 @@
+@import "../components/media.scss";
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Home Intro       
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.home-intro {
+  padding-top: 10rem;
+  position: relative;
+  overflow: visible;
+  text-align: center;
+
+  .home-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      max-width: 100rem;
+      font-family: sombra-black, sans-serif;
+      // text-transform: uppercase;
+      font-size: 3.5rem;
+      line-height: .95;
+      padding-bottom: 3rem;
+      @include media("<=tablet") {
+        font-size: 4.5rem;
+      }
+    }
+    p {
+      font-family: neue-haas-grotesk-display, sans-serif;
+      font-weight: 300;
+      font-size: 2.5rem;
+      max-width: 80rem;
+      padding-bottom: 2rem;
+    }
+   
+  }
+}
+
+.select_exp {
+  padding-bottom: 6rem;
+
+  @include media("<=tablet") {
+    padding-bottom: 0;
+    .col-xl-6{
+      padding-bottom: 5rem;
+    }
+  }
+
+
+  @include media(">tablet") {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+
+  .city-title {
+    padding-top: 3rem;
+    @include media("<phone") {
+      padding-top: 1rem;
+    }
+    img {
+      max-width: 10rem;
+      padding-bottom: 2.5rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // ADDED THIS CAIN DID
+    width: 80%;
+    margin: 0 auto;
+
+    h3,
+    h5 {
+      text-transform: inherit;
+      cursor: pointer;
+      color: #000;
+      text-align: center;
+      pointer-events: none !important;
+    }
+    h3 {
+      font-size: 5.5rem;
+      line-height: .95;
+      @include media("<=tablet") {
+        font-size: 3.5rem;
+      }
+      font-family: sombra-black, sans-serif;
+
+    }
+    h5 {
+      width: 50%;
+      font-size: 2rem;
+      text-transform: inherit;
+      padding-top: 2rem;
+      font-family: neue-haas-grotesk-display, sans-serif;
+
+    }
+
+    a.btn-1 {
+      border-radius: 2rem;
+      margin-top: 2.5rem;
+      font-family: sombra-black, sans-serif;
+      font-weight: 600;
+      // padding-left: 6rem;
+      // padding-right: 6rem;
+      padding: 2rem 3rem;
+      font-size: 2rem;
+      color: #e6dace;
+    }
+  }
+
+  @include media("<phone") {
+    .col-md-6 {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+.img-detect-home {
+  overflow: hidden;
+  position: relative;
+  img {
+    transform: scale(1.1, 1.1);
+    transition: transform 2.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-delay: 0.1s;
+  }
+  &.is-inview img {
+    transform: scale(1, 1);
+  }
+}
+
+.prlx-img1 {
+  position: absolute;
+  height: auto;
+  display: block;
+  top: 0;
+  left: 0;
+  img {
+    max-width: 28rem;
+  }
+
+  @include media("<phone") {
+    img {
+      max-width: 22rem;
+    }
+  }
+}
+
+.prlx-img2 {
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  right: 5%;
+  img {
+    max-width: 32rem;
+  }
+  @include media("<phone") {
+    img {
+      max-width: 22rem;
+    }
+  }
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               Blur  Ball      
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+.left-ball,
+.right-ball {
+  display: none;
+  @include media(">tablet") {
+    display: block;
+  }
+}
+
+.left-ball {
+  position: absolute;
+  top: 5%;
+  left: -22%;
+  img {
+    max-width: 70rem;
+    width: auto;
+  }
+}
+
+.right-ball {
+  position: absolute;
+  bottom: -30rem;
+  right: -16%;
+  img {
+    max-width: 60rem;
+    width: auto;
+  }
+}
+
+@include media("<=tablet") {
+  .right-ball {
+    display: block;
+    bottom: -20rem;
+    right: -35%;
+    img {
+      max-width: 40rem;
+    }
+  }
+}
+
+.creator.right-ball {
+  bottom: -27rem;
+  right: -15rem;
+}
+.menu-ball {
+  bottom: -10rem;
+}
