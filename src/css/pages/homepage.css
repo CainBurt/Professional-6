@@ -18,6 +18,7 @@
   font-size: 3.5rem;
   line-height: 0.95;
   padding-bottom: 3rem;
+  color: #fff;
 }
 @media (max-width: 1024px) {
   .home-intro .home-title h1 {
@@ -70,7 +71,7 @@
 .select_exp .city-title h5 {
   text-transform: inherit;
   cursor: pointer;
-  color: #000;
+  color: #fff;
   text-align: center;
   pointer-events: none !important;
 }
@@ -98,7 +99,6 @@
   font-weight: 600;
   padding: 2rem 3rem;
   font-size: 2rem;
-  color: #e6dace;
 }
 @media (max-width: 767px) {
   .select_exp .col-md-6 {

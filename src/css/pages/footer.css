@@ -6,6 +6,7 @@ footer {
   padding-bottom: 3.5rem;
   position: relative;
   z-index: 2;
+  color: #fff;
 }
 footer .text-center > a {
   font-weight: 600;
@@ -15,6 +16,10 @@ footer a {
   font-size: 1.7rem;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 300;
+}
+footer span img,
+footer a img {
+  filter: invert(100%) sepia(6%) saturate(2%) hue-rotate(206deg) brightness(104%) contrast(101%);
 }
 footer span svg,
 footer a svg {

@@ -334,6 +334,10 @@ p {
   background: #bc9fe6;
 }
 
+.bg-black {
+  background: #000;
+}
+
 @font-face {
   font-family: nfun;
   src: url("./font/p-mid.otf") format("opentype");
@@ -4325,8 +4329,8 @@ footer .appear-y {
   line-height: 0.95;
   font-size: 2rem;
   font-family: "a-gothic";
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   transition: all 0.3s ease;
   display: inline-block;
   border-radius: 5rem;
@@ -4334,10 +4338,10 @@ footer .appear-y {
   border: 1px solid var(--blue);
 }
 .btn-1:hover {
-  color: black !important;
+  color: #fff !important;
   background-color: transparent;
   transition: all 0.15s ease;
-  border: 1px solid #000;
+  border: 1px solid #fff;
 }
 .btn-1.white {
   background-color: #fff;
@@ -6002,6 +6006,7 @@ footer {
   padding-bottom: 3.5rem;
   position: relative;
   z-index: 2;
+  color: #fff;
 }
 footer .text-center > a {
   font-weight: 600;
@@ -6011,6 +6016,10 @@ footer a {
   font-size: 1.7rem;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 300;
+}
+footer span img,
+footer a img {
+  filter: invert(100%) sepia(6%) saturate(2%) hue-rotate(206deg) brightness(104%) contrast(101%);
 }
 footer span svg,
 footer a svg {
@@ -6725,6 +6734,7 @@ button.swiper-pagination-bullet {
   font-size: 3.5rem;
   line-height: 0.95;
   padding-bottom: 3rem;
+  color: #fff;
 }
 @media (max-width: 1024px) {
   .home-intro .home-title h1 {
@@ -6777,7 +6787,7 @@ button.swiper-pagination-bullet {
 .select_exp .city-title h5 {
   text-transform: inherit;
   cursor: pointer;
-  color: #000;
+  color: #fff;
   text-align: center;
   pointer-events: none !important;
 }
@@ -6805,7 +6815,6 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   padding: 2rem 3rem;
   font-size: 2rem;
-  color: #e6dace;
 }
 @media (max-width: 767px) {
   .select_exp .col-md-6 {
