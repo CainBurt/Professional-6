@@ -1,0 +1,50 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @media only screen and (max-width: 768px) {
+        height: 60vh;
+        background-attachment: unset;
+    }
+    h1 {
+        width: 60vw;
+        font-size: 7.5vw;
+        color: white;
+        font-family: sombra-black, sans-serif;
+        line-height: 1.1;
+    }
+
+    .hero-btn{
+        border-radius: 2rem;
+        margin-top: 1.5rem;
+        font-family: sombra-black, sans-serif;
+        font-weight: 600;
+        padding: 2rem 3rem;
+        font-size: 2rem;
+        color: #000000;
+        background-color: #ff8256;
+        border: 1px solid #ff8256;
+
+        &:hover{
+            color: #ff8256;
+            background-color: transparent;
+            transition: all 0.15s ease;
+            border: 1px solid #ff8256;
+            
+        }
+    }
+
+    // img {
+    //     position: absolute;
+    //     transform: translate(25vw, 6vw);
+    //     width: 15%;
+    // }
+}
