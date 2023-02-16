@@ -491,6 +491,7 @@ form.invalid .wpcf7-response-output {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  color: #04043F;
 }
 .wpcf7-form.sent .qrcode img {
   max-width: 30rem !important;

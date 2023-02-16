@@ -7,7 +7,7 @@ footer {
   position: relative;
   z-index: 2;
   color: #fff;
-  background-color: black;
+  background-color: #04043F;
 }
 footer .text-center > a {
   font-weight: 600;

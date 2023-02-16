@@ -5738,6 +5738,7 @@ form.invalid .wpcf7-response-output {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  color: #04043F;
 }
 .wpcf7-form.sent .qrcode img {
   max-width: 30rem !important;
@@ -6022,7 +6023,7 @@ footer {
   position: relative;
   z-index: 2;
   color: #fff;
-  background-color: black;
+  background-color: #04043F;
 }
 footer .text-center > a {
   font-weight: 600;
@@ -6763,7 +6764,7 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
   padding: 2rem 3rem;
   font-size: 2rem;
-  color: #000000;
+  color: #04043F;
   background-color: #ffffff;
   border: 1px solid #ffffff;
 }
