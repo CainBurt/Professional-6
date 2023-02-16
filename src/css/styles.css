@@ -362,6 +362,11 @@ p {
   src: url("./font/Sombra-Black.otf") format("opentype");
   font-weight: 300;
 }
+@font-face {
+  font-family: roboto-bold;
+  src: url("./font/Roboto-Bold.ttf") format("truetype");
+  font-weight: 300;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                    Bootstrap                     
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -5775,10 +5780,9 @@ header {
   align-items: center;
   transition: transform 0.7s ease;
   width: 100%;
-  height: 10.5rem;
+  height: 7rem;
   color: #FFFFFF;
-  background-color: #eb0100;
-  border-bottom: 1px solid white;
+  background-color: #04043F;
 }
 header .menu-links {
   display: flex;
@@ -5840,8 +5844,14 @@ header .social-icons:hover img {
   }
 }
 
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 10vw;
+}
 .header-logo img {
-  max-width: 18rem;
+  max-width: 35rem;
   height: auto;
 }
 
@@ -6718,12 +6728,13 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-left: 11vw;
 }
 @media only screen and (max-width: 768px) {
   .hero {
@@ -6735,25 +6746,27 @@ button.swiper-pagination-bullet {
   width: 60vw;
   font-size: 7.5vw;
   color: white;
-  font-family: sombra-black, sans-serif;
-  line-height: 1.1;
+  text-align: left;
+  font-family: roboto-bold, sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
 }
 .hero .hero-btn {
-  border-radius: 2rem;
   margin-top: 1.5rem;
-  font-family: sombra-black, sans-serif;
+  font-family: roboto-bold, sans-serif;
   font-weight: 600;
+  text-transform: uppercase;
   padding: 2rem 3rem;
   font-size: 2rem;
   color: #000000;
-  background-color: #ff8256;
-  border: 1px solid #ff8256;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
 }
 .hero .hero-btn:hover {
-  color: #ff8256;
+  color: #ffffff;
   background-color: transparent;
   transition: all 0.15s ease;
-  border: 1px solid #ff8256;
+  border: 1px solid #ffffff;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -6775,7 +6788,7 @@ button.swiper-pagination-bullet {
 }
 .home-intro .home-title h1 {
   max-width: 100rem;
-  font-family: sombra-black, sans-serif;
+  font-family: roboto-bold, sans-serif;
   font-size: 3.5rem;
   line-height: 0.95;
   padding-bottom: 3rem;
