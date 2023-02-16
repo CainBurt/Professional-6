@@ -5362,19 +5362,21 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   background: #fff;
   width: 100%;
   border-radius: 2rem;
+  color: #04043F;
 }
 .contact-form .col-xl-6 {
   padding-right: 2rem;
 }
 .contact-form h3 {
   font-size: 4.8rem;
-  font-family: sombra-black, sans-serif;
+  font-family: roboto-bold, sans-serif;
   font-weight: 600;
   padding-top: 2%;
   padding-bottom: 0;
   line-height: 0.95;
   margin: 0;
   text-align: center;
+  color: #04043F;
 }
 .contact-form .submit-btn {
   display: block !important;
@@ -5388,17 +5390,19 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 300;
   background-color: var(--blue);
-  color: #e6dace;
+  color: #ffffff;
   transition: all 0.3s ease;
   display: inline-block;
   outline: none;
-  border-radius: 2rem;
   box-sizing: border-box;
   border: 1px solid var(--blue);
+  background-color: #04043F;
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 .contact-form .submit-btn:hover {
-  color: var(--blue);
+  color: #04043F;
+  border: 1px solid #04043F;
   background-color: #fefefe;
   transition: background-color 0.2s ease;
   border: 1px solid var(--blue);
@@ -5477,7 +5481,7 @@ select {
   margin-top: 1rem !important;
   width: 82%;
   font-size: 1.75rem !important;
-  font-family: sombra-black, sans-serif;
+  font-family: roboto-bold, sans-serif;
   text-align: center;
 }
 
@@ -5699,10 +5703,11 @@ form.invalid .wpcf7-response-output {
   padding-top: 1.5rem;
   font-size: 2rem !important;
   text-align: center !important;
-  font-family: sombra-black, sans-serif;
+  font-family: roboto-bold, sans-serif;
   line-height: 1;
   text-transform: uppercase;
   padding-bottom: 2rem;
+  color: #EB0000;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -5727,7 +5732,7 @@ form.invalid .wpcf7-response-output {
 }
 .wpcf7-form.sent .qrcode .qr-title {
   font-size: 4rem !important;
-  font-family: sombra-black, sans-serif !important;
+  font-family: roboto-bolds, sans-serif !important;
   line-height: 1.1;
   text-align: center;
   margin-left: auto;
@@ -6012,8 +6017,8 @@ header .social-icons:hover img {
                   footer          
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 footer {
-  padding-top: 6rem;
-  padding-bottom: 3.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
   position: relative;
   z-index: 2;
   color: #fff;
@@ -6776,7 +6781,6 @@ button.swiper-pagination-bullet {
                 Home Intro       
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .home-intro {
-  padding-top: 10rem;
   position: relative;
   overflow: visible;
   text-align: center;
