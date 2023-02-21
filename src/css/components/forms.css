@@ -72,6 +72,8 @@
   transition: opacity 0.2s ease;
   width: 50vw;
   min-height: 30rem;
+  max-height: 90vh;
+  overflow-y: scroll;
 }
 @media (max-width: 1024px) {
   .registation-form {
@@ -131,6 +133,46 @@
   text-align: center;
   color: #04043F;
 }
+.contact-form .form-steps {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+.contact-form .form-steps > div {
+  width: 30%;
+}
+.contact-form .form-steps > div > h3 {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  padding: 10px;
+  background: #C4C4C4;
+  color: #ffffff;
+  text-align: center;
+  font: 32px roboto-bold, sans-serif;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .contact-form .form-steps > div > h3 {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+  }
+}
+.contact-form .form-steps > div > p {
+  font: 16px roboto-bold, sans-serif;
+  color: #04043F;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1em;
+}
+@media only screen and (max-width: 768px) {
+  .contact-form .form-steps > div > p {
+    font-size: 14px;
+  }
+}
 .contact-form .submit-btn {
   display: block !important;
   padding: 2rem 3rem;
@@ -160,6 +202,11 @@
   transition: background-color 0.2s ease;
   border: 1px solid var(--blue);
   box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  .contact-form .submit-btn {
+    margin-top: 1em;
+  }
 }
 
 .contact-form form ::-moz-placeholder {

@@ -72,6 +72,8 @@
 
   width: 50vw;
   min-height: 30rem;
+  max-height: 90vh;
+  overflow-y: scroll;
   @include media("<=tablet") {
     width: 85vw;
     min-height: 50vh;
@@ -133,6 +135,43 @@
     text-align: center;
     color: #04043F;
   }
+  .form-steps{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    >div{
+      width: 30%;
+      >h3{
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        width: 115px;
+        height: 115px;
+        padding: 10px;
+        background: #C4C4C4;
+        // border: 3px solid #000;
+        color: #ffffff;
+        text-align: center;
+        font: 32px roboto-bold, sans-serif;
+        margin: 0 auto;
+        @media only screen and (max-width: 768px) {
+          width: 70px;
+          height: 70px;
+          font-size: 20px;
+        }
+      }
+      >p{
+        font: 16px roboto-bold, sans-serif;
+        color: #04043F;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 1em;
+        @media only screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 
   .submit-btn {
     display: block !important;
@@ -164,6 +203,9 @@
       transition: background-color 0.2s ease;
       border: 1px solid var(--blue);
       box-sizing: border-box;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top: 1em;
     }
   }
 }
