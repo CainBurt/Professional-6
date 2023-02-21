@@ -77,6 +77,8 @@
   @include media("<=tablet") {
     width: 85vw;
     min-height: 50vh;
+    max-height: 85vh;
+    margin-top: 5vh;
   }
 
   .close-btn {
@@ -139,8 +141,15 @@
     display: flex;
     justify-content: space-between;
     padding-top: 1em;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
     >div{
       width: 30%;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding-top: 1em;
+      }
       >h3{
         display: flex;
         align-items: center;
@@ -149,15 +158,14 @@
         height: 115px;
         padding: 10px;
         background: #C4C4C4;
-        // border: 3px solid #000;
         color: #ffffff;
         text-align: center;
         font: 32px roboto-bold, sans-serif;
         margin: 0 auto;
         @media only screen and (max-width: 768px) {
-          width: 70px;
-          height: 70px;
-          font-size: 20px;
+          width: 85px;
+          height: 85px;
+          font-size: 22px;
         }
       }
       >p{

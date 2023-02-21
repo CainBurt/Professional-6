@@ -5331,6 +5331,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   .registation-form {
     width: 85vw;
     min-height: 50vh;
+    max-height: 85vh;
+    margin-top: 5vh;
   }
 }
 .registation-form .close-btn {
@@ -5390,8 +5392,19 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   justify-content: space-between;
   padding-top: 1em;
 }
+@media only screen and (max-width: 768px) {
+  .contact-form .form-steps {
+    flex-direction: column;
+  }
+}
 .contact-form .form-steps > div {
   width: 30%;
+}
+@media only screen and (max-width: 768px) {
+  .contact-form .form-steps > div {
+    width: 100%;
+    padding-top: 1em;
+  }
 }
 .contact-form .form-steps > div > h3 {
   display: flex;
@@ -5408,9 +5421,9 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 @media only screen and (max-width: 768px) {
   .contact-form .form-steps > div > h3 {
-    width: 70px;
-    height: 70px;
-    font-size: 20px;
+    width: 85px;
+    height: 85px;
+    font-size: 22px;
   }
 }
 .contact-form .form-steps > div > p {
@@ -6842,10 +6855,11 @@ button.swiper-pagination-bullet {
     display: none !important;
   }
   .hero {
+    height: 115vh;
     width: auto;
     align-items: center;
     padding-left: 0;
-    padding-top: 40%;
+    padding-top: 20%;
   }
   .hero h1 {
     width: 85vw;
@@ -6858,7 +6872,20 @@ button.swiper-pagination-bullet {
   }
   .hero .hero-btn {
     width: 85%;
-    margin-bottom: 20%;
+    margin-bottom: 8%;
+  }
+  .hero .mob-social {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+  .hero .mob-social > a {
+    height: 60px;
+    width: 60px;
+  }
+  .hero .mob-social > a > img {
+    width: 100%;
+    height: 100%;
   }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

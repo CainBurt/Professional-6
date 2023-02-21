@@ -12,4 +12,15 @@
     <h1>{{heroTitle}}</h1>
     <img src="{{mobileForeground}}" alt="sports people"   >
     <a class="hero-btn" href="{{buttonLink}}">Book a slot</a>
+    <div class="mob-social">
+			{% for slink in options.social_links %}
+
+				{% set  linkicon = TimberImage(slink.link_icon) %}
+				{% set  linkicon_alt = linkicon.title ? linkicon.title : linkicon.alt %}		 
+				{% set  linkbtn = slink.link_btn %}
+					<a  href="{{ linkbtn.url }}"  target="_blank" class="social-icons">
+						<img class="img-fluid" src="{{ linkicon }}" alt="{{ linkicon_alt }}">
+					</a>
+				{% endfor %}
+		</div>
 </section>
