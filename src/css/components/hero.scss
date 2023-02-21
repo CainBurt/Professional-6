@@ -1,3 +1,4 @@
+@import "./media.scss";
 .hero {
     width: 100vw;
     height: 100vh;
@@ -12,7 +13,7 @@
     background-attachment: fixed;
     padding-left: 11vw;
     @media only screen and (max-width: 768px) {
-        height: 80vh;
+        height: 100vh;
         background-attachment: unset;
     }
     h1 {
@@ -51,4 +52,37 @@
     //     transform: translate(25vw, 6vw);
     //     width: 15%;
     // }
+}
+.hero-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-mobile{
+        display: flex;
+    }
+    .hero-desktop{
+        display: none;
+    }
+
+    .hero{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 20rem;
+        h1{
+            width: 85vw;
+            text-align: center;
+            font-size: 11vw;
+        }
+        img{
+            max-width: 95vw;
+            height: auto;
+        }
+
+        .hero-btn{
+            width: 85%;
+            margin-bottom: 43vw;
+        }
+    }
 }

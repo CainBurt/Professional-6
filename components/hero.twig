@@ -1,7 +1,15 @@
 {% set heroImage = post.get_field('hero_image') %}
 {% set heroTitle = post.get_field('hero_title') %}
 {% set buttonLink = post.get_field('button_link') %}
-<section class="hero" style="background-image: url({{heroImage}});">
+{% set mobileBackground = post.get_field('mobile_background') %}
+{% set mobileForeground = post.get_field('mobile_foreground') %}
+<section class="hero hero-desktop" style="background-image: url({{heroImage}});">
     <h1>{{heroTitle}}</h1>
+    <a class="hero-btn" href="{{buttonLink}}">Book a slot</a>
+</section>
+
+<section class="hero hero-mobile" style="background-image: url({{mobileBackground}});">
+    <h1>{{heroTitle}}</h1>
+    <img src="{{mobileForeground}}" alt="sports people"   >
     <a class="hero-btn" href="{{buttonLink}}">Book a slot</a>
 </section>

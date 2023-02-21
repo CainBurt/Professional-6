@@ -6747,7 +6747,7 @@ button.swiper-pagination-bullet {
 }
 @media only screen and (max-width: 768px) {
   .hero {
-    height: 80vh;
+    height: 100vh;
     background-attachment: unset;
   }
 }
@@ -6778,6 +6778,37 @@ button.swiper-pagination-bullet {
   border: 1px solid #ffffff;
 }
 
+.hero-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-mobile {
+    display: flex;
+  }
+  .hero-desktop {
+    display: none;
+  }
+  .hero {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 43vw;
+  }
+  .hero h1 {
+    width: 85vw;
+    text-align: center;
+    font-size: 11vw;
+  }
+  .hero img {
+    max-width: 95vw;
+    height: auto;
+  }
+  .hero .hero-btn {
+    width: 85%;
+    margin-bottom: 43vw;
+  }
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                  PAGES             
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

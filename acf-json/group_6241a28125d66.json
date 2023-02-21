@@ -48,6 +48,56 @@
             "preview_size": "medium"
         },
         {
+            "key": "field_63f4ba24ee536",
+            "label": "Mobile Background Image",
+            "name": "mobile_background",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_63f4ba56ee537",
+            "label": "Mobile Foreground Image",
+            "name": "mobile_foreground",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
             "key": "field_639b2873199be",
             "label": "Button Link",
             "name": "button_link",
@@ -252,5 +302,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671192524
+    "modified": 1676983549
 }
