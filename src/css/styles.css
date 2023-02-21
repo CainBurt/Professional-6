@@ -6790,10 +6790,11 @@ button.swiper-pagination-bullet {
     display: none;
   }
   .hero {
+    width: auto;
     justify-content: center;
     align-items: center;
     padding-left: 0;
-    padding-top: 43vw;
+    padding-top: 20%;
   }
   .hero h1 {
     width: 85vw;
