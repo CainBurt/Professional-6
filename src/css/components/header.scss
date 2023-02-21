@@ -99,10 +99,11 @@ header {
   @include media("<=tablet") {
     padding-left: 5vw;
     padding-right: 5vw;
-
+    
     .header-logo {
+      margin-left: 0;
       img {
-        max-width: 35rem;
+        max-width: 100%;
         height: auto;
       }
     }

@@ -5838,8 +5838,11 @@ header .social-icons:hover img {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+  header .header-logo {
+    margin-left: 0;
+  }
   header .header-logo img {
-    max-width: 35rem;
+    max-width: 100%;
     height: auto;
   }
 }
