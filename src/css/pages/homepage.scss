@@ -9,32 +9,79 @@
   position: relative;
   overflow: visible;
   text-align: center;
+  color: #04043F;
+  >.home-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 5em 10em;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 5em 0em;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
 
   .home-title {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    padding-top: 5em;
     h1 {
+      @media only screen and (max-width: 768px) {
+        padding-top: 1em;
+        text-align: center;
+      }
       max-width: 100rem;
       font-family: roboto-bold, sans-serif;
       // text-transform: uppercase;
       font-size: 3.5rem;
       line-height: .95;
       padding-bottom: 3rem;
-      color: #fff;
+      color: #04043F;
+      text-align: left;
       @include media("<=tablet") {
         font-size: 4.5rem;
       }
     }
     p {
-      font-family: neue-haas-grotesk-display, sans-serif;
-      font-weight: 300;
+      font-family: roboto-regular, sans-serif;
+      // font-weight: 300;
       font-size: 2.5rem;
       max-width: 80rem;
       padding-bottom: 2rem;
+      text-align: left;
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
    
+  }
+  img{
+    width: auto;
+    height: 100%;
+    max-height: 70rem;
+  }
+  a.btn-1 {
+    // border-radius: 2rem;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    // padding-left: 6rem;
+    // padding-right: 6rem;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #04043F;
+    border-radius: 0em;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    &:hover{
+      color: #04043F !important;
+      background-color: transparent; 
+      border: 1px solid #04043F;
+    }
   }
 }
 
@@ -95,18 +142,23 @@
       font-family: neue-haas-grotesk-display, sans-serif;
 
     }
-
+    img{
+      width: auto;
+      height: 100%;
+    }
     a.btn-1 {
-      border-radius: 2rem;
+      // border-radius: 2rem;
+      text-transform: uppercase;
       margin-top: 2.5rem;
-      font-family: sombra-black, sans-serif;
+      font-family: roboto-bold, sans-serif;
       font-weight: 600;
       // padding-left: 6rem;
       // padding-right: 6rem;
       padding: 2rem 3rem;
       font-size: 2rem;
-      // color: #000;
-      // background-color: #fff;
+      color: #ffffff;
+      background-color: #04043F;
+      border-radius: none;
     }
   }
 

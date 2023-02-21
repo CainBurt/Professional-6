@@ -54,14 +54,13 @@
     display: flex;
   }
   .hero-desktop {
-    display: none;
+    display: none !important;
   }
   .hero {
     width: auto;
-    justify-content: center;
     align-items: center;
     padding-left: 0;
-    padding-top: 20%;
+    padding-top: 40%;
   }
   .hero h1 {
     width: 85vw;
@@ -74,6 +73,6 @@
   }
   .hero .hero-btn {
     width: 85%;
-    margin-bottom: 43vw;
+    margin-bottom: 20%;
   }
 }/*# sourceMappingURL=hero.css.map */

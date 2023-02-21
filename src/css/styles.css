@@ -367,6 +367,11 @@ p {
   src: url("./font/Roboto-Bold.ttf") format("truetype");
   font-weight: 300;
 }
+@font-face {
+  font-family: roboto-regular;
+  src: url("./font/Roboto-Regular.ttf") format("truetype");
+  font-weight: 300;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                    Bootstrap                     
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -6787,14 +6792,13 @@ button.swiper-pagination-bullet {
     display: flex;
   }
   .hero-desktop {
-    display: none;
+    display: none !important;
   }
   .hero {
     width: auto;
-    justify-content: center;
     align-items: center;
     padding-left: 0;
-    padding-top: 20%;
+    padding-top: 40%;
   }
   .hero h1 {
     width: 85vw;
@@ -6807,7 +6811,7 @@ button.swiper-pagination-bullet {
   }
   .hero .hero-btn {
     width: 85%;
-    margin-bottom: 43vw;
+    margin-bottom: 20%;
   }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -6820,11 +6824,25 @@ button.swiper-pagination-bullet {
   position: relative;
   overflow: visible;
   text-align: center;
+  color: #04043F;
+}
+.home-intro > .home-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5em 10em;
+}
+@media only screen and (max-width: 768px) {
+  .home-intro > .home-container {
+    flex-direction: column;
+    padding: 5em 0em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 .home-intro .home-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-top: 5em;
 }
 .home-intro .home-title h1 {
   max-width: 100rem;
@@ -6832,7 +6850,14 @@ button.swiper-pagination-bullet {
   font-size: 3.5rem;
   line-height: 0.95;
   padding-bottom: 3rem;
-  color: #fff;
+  color: #04043F;
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .home-intro .home-title h1 {
+    padding-top: 1em;
+    text-align: center;
+  }
 }
 @media (max-width: 1024px) {
   .home-intro .home-title h1 {
@@ -6840,11 +6865,42 @@ button.swiper-pagination-bullet {
   }
 }
 .home-intro .home-title p {
-  font-family: neue-haas-grotesk-display, sans-serif;
-  font-weight: 300;
+  font-family: roboto-regular, sans-serif;
   font-size: 2.5rem;
   max-width: 80rem;
   padding-bottom: 2rem;
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .home-intro .home-title p {
+    text-align: center;
+  }
+}
+.home-intro img {
+  width: auto;
+  height: 100%;
+  max-height: 70rem;
+}
+.home-intro a.btn-1 {
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  font-family: roboto, sans-serif;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #04043F;
+  border-radius: 0em;
+}
+@media only screen and (max-width: 768px) {
+  .home-intro a.btn-1 {
+    width: 100%;
+  }
+}
+.home-intro a.btn-1:hover {
+  color: #04043F !important;
+  background-color: transparent;
+  border: 1px solid #04043F;
 }
 
 .select_exp {
@@ -6906,13 +6962,20 @@ button.swiper-pagination-bullet {
   padding-top: 2rem;
   font-family: neue-haas-grotesk-display, sans-serif;
 }
+.select_exp .city-title img {
+  width: auto;
+  height: 100%;
+}
 .select_exp .city-title a.btn-1 {
-  border-radius: 2rem;
+  text-transform: uppercase;
   margin-top: 2.5rem;
-  font-family: sombra-black, sans-serif;
+  font-family: roboto-bold, sans-serif;
   font-weight: 600;
   padding: 2rem 3rem;
   font-size: 2rem;
+  color: #ffffff;
+  background-color: #04043F;
+  border-radius: none;
 }
 @media (max-width: 767px) {
   .select_exp .col-md-6 {
