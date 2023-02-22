@@ -74,7 +74,6 @@ header .social-icons img {
   max-width: 4rem;
   height: auto;
   transition: transform 0.2s ease;
-  filter: invert(100%) sepia(6%) saturate(2%) hue-rotate(206deg) brightness(104%) contrast(101%);
 }
 header .social-icons:hover img {
   transform: scale(1.1);
