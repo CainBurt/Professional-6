@@ -223,6 +223,9 @@ class Entries_list extends WP_List_Table {
             case 'choice':
                 $choice = get_post_meta($item->ID, 'tshirt_choice', true);
                 return $choice;
+            case 'prompt':
+                $prompt = get_post_meta($item->ID, 'tshirt_prompt', true);
+                return $prompt;
             case 'played':  
                 $is_user_played = get_post_meta($item->ID, 'is_user_played', true);
                 return  '<select id="cd_user_played_'.$item->ID.'" onChange="update_user_played(this.value, '.$item->ID.')">
@@ -320,6 +323,7 @@ class Entries_list extends WP_List_Table {
             'address' => 'Delivery Address',
             'sequence_generator' => 'Code',
             'choice' => 'Print/Plant',
+            'prompt' => 'Prompt',
             'played' => 'Attended',
             'date'     => 'Submission Date',
             //'status' => 'Status',
@@ -433,6 +437,7 @@ class Entries_list extends WP_List_Table {
                             'Address',
                             'Code',
                             'Print/Plant',
+                            'Prompt',
                             'Attended');
                             // 'Submission Date');
         
@@ -463,6 +468,7 @@ class Entries_list extends WP_List_Table {
             //$bra_size = get_post_meta($value->ID, 'bra-size', true);
             $sequence_generator = get_post_meta($value->ID, 'sequence-generator', true);  
             $choice = get_post_meta($value->ID, 'tshirt_choice', true);
+            $prompt = get_post_meta($value->ID, 'tshirt_prompt', true);
             $is_user_played = get_post_meta($value->ID, 'is_user_played', true);
             
             $array_data[] = $from_name;
@@ -482,6 +488,7 @@ class Entries_list extends WP_List_Table {
             $array_data[] = $address;
             $array_data[] = $sequence_generator;
             $array_data[] = $choice;
+            $array_data[] = $prompt;
             //$array_data[] = $bra_size;  
             $array_data[] = $is_user_played == 1 ? 'Yes' : 'No';
             // $array_data[] = date('d/m/Y g:i A', strtotime($value->post_date));
