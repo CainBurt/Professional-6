@@ -506,7 +506,8 @@ function football_verse_form_dropdown_date()
             }
             if($remaining_slots > 0)  
                 $data .= '<option value="'.date('Y-m-d', strtotime($date)).'">'.date('j F, Y', strtotime($date)).'</option>';
-            
+            else
+                $data = '<option value=""> No More Slots Available</option>';
         }
         $all_events_slots[$key]['activity'] = $session_event;
         $all_events_slots[$key]['date_slots'] = $data;
