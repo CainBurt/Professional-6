@@ -13,7 +13,7 @@
 
     {% set homeImage = post.get_field('home_image') %}
     {% set desc = post.get_field('home_para') %}
-       <div class="container home-container">
+       <div class="container home-container" id="waiting">
             <img src="{{homeImage}}" alt="sports people">
             <div class="home-title" data-scroll>
                 {{ desc }}
